@@ -14,9 +14,29 @@
     <div class="row vh-100 g-0">
         <!-- left side -->
         <div class="col-lg-6 position-relative d-none d-lg-block">
-            <div class="bg-holder" style="background-image: url(moon.png);">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="moon.jpg" class="d-block w-100" alt="moon1">
+              </div>
+              <div class="carousel-item">
+                <img src="moon1.jpg" class="d-block w-100" alt="moon2">
+              </div>
+              <div class="carousel-item">
+                <img src="moon2.jpg" class="d-block w-100" alt="moon3">
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
+
 
         <!-- end left side -->
         <!-- right side -->
@@ -41,53 +61,45 @@
                         <i class='bx bxl-facebook text-primary fs=6'></i> login with facebook
                     </button>
                     <!--social login end-->
-                    <!--divider-->
-                    <div class="position-relative">
-
-                        <hr class="text-secondary divider">
-                        <div class="divider-content-center">or</div>
-
+                   <!-- Divider -->
+                   <div class="position-relative">
+                    <hr class="text-secondary divider">
+                    <div class="divider-content-center">OR</div>
+                </div>
+                <!--/ Divider -->
+                <!-- Form -->
+                <form action="#">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="bx bx-user"></i>
+                        </span>
+                        <input type="text" class="form-control form-control-lg fs-6" placeholder="UserName">
                     </div>
-                    <!-- form -->
-                    <form action="#">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">
-                                <i class="bx bx-user"></i>
-                                <input type="text" class="form-control form-control-lg fs-6" placeholder="Username">
-
-                            </span>
-
-                        </div>
-                    </form>
-                    <form action="#">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">
-                                <i class="bx bx-lock"></i>
-                                <input type="password" class="form-control form-control-lg fs-6" placeholder="password">
-
-                            </span>
-
-                        </div>
-
-                        <div class=" input-group mb-3">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="bx bx-lock"></i>
+                        </span>
+                        <input type="password" class="form-control form-control-lg fs-6" placeholder="Password">
+                    </div>
+                    <div class="input-group mb-3 d-flex justify-content-between">
+                        <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="formcheck">
-                            <label for="formcheck" class="form-check-label text secondary"></small> Remember me</label>
+                            <label for="formcheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
                         </div>
                         <div>
-                            <small><a href="#">forgot password</a>
+                            <small><a href="#">Forget Password?</a></small>
                         </div>
-                    </form>
-                    <!-- form -->
-                    <div class="don't have an account yet?"> <a href="#">sign up now</a>
                     </div>
-
+                    <button class="btn btn-primary btn-lg w-100 mb-3">Login</button>
+                </form>
+                <!--/ Form -->
+                <div class="text-center">
+                    <small>Don't have an account yet? <a href="#" class="fw-bold"> Sign Up Now!</a></small>
                 </div>
-
             </div>
-
         </div>
     </div>
-    </div>
+</div>
 
 </body>
 
